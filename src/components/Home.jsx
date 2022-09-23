@@ -1,4 +1,5 @@
 
+import Hero from "./Hero"
 import Navbar from "./Navbar"
 function Home() {
 
@@ -6,6 +7,7 @@ function Home() {
     return (
       <div>
         <Navbar></Navbar>
+        <Hero></Hero>
       </div>
     )
   }
