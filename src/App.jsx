@@ -7,15 +7,11 @@ function App() {
 
   return (
    <div className='mx-10'>
-    <Home></Home>
     <Routes>
+    <Route path="/" element={<Home />}></Route>
     <Route path="/login" element={<Login />}></Route>
-
-
     </Routes>
-
-
-   </div>
+</div>
   )
 }
 

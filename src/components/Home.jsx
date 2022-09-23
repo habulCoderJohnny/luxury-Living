@@ -5,7 +5,7 @@ import Hero from "./Hero"
 import Navbar from "./Navbar"
 import Projects from "./Projects"
 import Services from "./Services"
-import Testimonials from "./Testimonials"
+// import Testimonials from "./Testimonials"
 function Home() {
 
 
