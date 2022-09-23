@@ -1,12 +1,10 @@
 import logo from "../assets/Image_Icon/Icon/logo.png"
 function Navabar() {
   const nav = <>
-      <li><a>Item 1</a></li>
+              <li><a>Item 1</a></li>
               <li><a>Item 2</a></li>
               <li><a>Item 3</a></li>
-  
-  
-  </>
+            </>
 
     return (
         <div className="navbar bg-[#F7F7F7]">
@@ -30,7 +28,7 @@ function Navabar() {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn text-white">Login</a>
+          <a className="btn  hover:bg-teal-400 focus:outline-none  text-white">Login</a>
         </div>
       </div>
     )

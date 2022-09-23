@@ -8,7 +8,7 @@ function Projects() {
             .then(data => setProject(data))
     }, []);
     return (
-        <div className="text-center my-6">
+        <div className="text-center my-20">
             <h1>Projects</h1>
             <p className="text-3xl font-black">Discover the latest Interior Design
                 <p>available today</p>
@@ -17,7 +17,7 @@ function Projects() {
             {
                 project.map(service => 
                 <div service={service} className="card card-compact w-80 shadow-xl gap-4  mx-auto">
-                    <figure><img src={service.img} alt="Shoes" /></figure>
+                    <figure><img className="w-80 h-80" src={service.img} alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="">{service.name}</h2>
                         <p className=""> <ImLocation2 className=" inline-flex"/>{service.location}</p>      
