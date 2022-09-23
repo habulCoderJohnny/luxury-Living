@@ -1,0 +1,18 @@
+[
+    {
+        "img" : "https://i.ibb.co/52h891Y/house-1.png",
+        "name":"Villa on Washington Avenue",
+        "location": "Washington, USA"
+    },
+    {
+        "img" : "https://i.ibb.co/g4Z71p0/house-2.png",
+        "name":"Luxury villa in Rego Park",
+        "location": "Mirpur, Dhaka"
+    },
+    {
+        "img" : "https://i.ibb.co/52h891Y/house-1.png",
+        "name":"Gorgeous house",
+        "location": "Uttara, Dhaka"
+    }
+]
+

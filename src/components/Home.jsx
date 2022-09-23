@@ -1,6 +1,7 @@
 
 import Hero from "./Hero"
 import Navbar from "./Navbar"
+import Projects from "./Projects"
 function Home() {
 
 
@@ -8,6 +9,7 @@ function Home() {
       <div>
         <Navbar></Navbar>
         <Hero></Hero>
+        <Projects></Projects>
       </div>
     )
   }
