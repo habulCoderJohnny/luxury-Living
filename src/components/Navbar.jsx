@@ -1,9 +1,12 @@
 import logo from "../assets/Image_Icon/Icon/logo.png"
+import { Link} from 'react-router-dom';
 function Navabar() {
   const nav = <>
-              <li><a>Item 1</a></li>
-              <li><a>Item 2</a></li>
-              <li><a>Item 3</a></li>
+              <li><a>Home</a></li>
+              <li><a>About us</a></li>
+              <li><a>Projects</a></li>
+              <li><a>Contact</a></li>
+              <li><a>Admin</a></li>
             </>
 
     return (
@@ -28,7 +31,7 @@ function Navabar() {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn  hover:bg-teal-400 focus:outline-none  text-white">Login</a>
+          <Link to="/login" className="btn hover:bg-teal-400 focus:outline-none  text-white">Login</Link>
         </div>
       </div>
     )
