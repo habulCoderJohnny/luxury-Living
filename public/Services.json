@@ -1,0 +1,20 @@
+[
+    {
+        "img" : "https://i.ibb.co/J2NjFZL/service-1.png",
+        "name":"Office Interior Design",
+        "price": 299
+    },
+    {
+        "img" : "https://i.ibb.co/tKSp4sq/service-2.png",
+        "name":"Showroom Design",
+        "price": 399
+    },
+    {
+        "img" : "https://i.ibb.co/MDjy2dp/service-3.png",
+        "name":"Residential/ Home",
+        "price": 499
+    }
+]
+
+
+
