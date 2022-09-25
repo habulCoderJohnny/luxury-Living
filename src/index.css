@@ -3,7 +3,7 @@
 @tailwind utilities;
  
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family:  Helvetica, Arial, sans-serif;
   /* background-image: linear-gradient(to right, #2b12cc, #7a55ca);
   color: white; */
 }

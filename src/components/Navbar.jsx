@@ -4,7 +4,7 @@ import auth from "../firebase.init";
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { signOut } from 'firebase/auth';
 
-function Navabar() {
+function Navbar() {
   const [user] = useAuthState(auth);
   const logout = () => {
     const confirm = window.confirm('Are you sure to logout?');
@@ -44,12 +44,36 @@ function Navabar() {
           {nav}
         </ul>
       </div>
-      <div className="navbar-end">
+      <div className="dropdown dropdown-end">
+                        <label tabIndex="0" className="btn btn-ghost btn-circle avatar">
+                       {  user?.photoURL? <div className="w-10 rounded-full">
+                                <img src={user?.photoURL} alt="" />
+                                </div>
+                              :<div className="w-10 rounded-full">
+                                <img src="https://thumbs.dreamstime.com/z/businessman-icon-image-male-avatar-profile-vector-glasses-beard-hairstyle-179728610.jpg" alt="" />
+                            </div>
+                            }
+                        </label>
+                        <ul tabIndex="0" className="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                            <li>
+                          <Link to="/profile" className="justify-between text-purple-500 font-bold uppercase">
+                              {user?.displayName} 
+                                <span className="badge">View</span>
+                                </Link>
+                            </li>
+                           
+                            {
+                                user && <li><Link to="/dashboard">Dashboard</Link></li>
+                            }
+                            
         {user ? <button onClick={logout} className="btn hover:bg-red-500 text-green">Logout</button> :
           <Link to="/login" className="btn hover:bg-teal-400 focus:outline-none  text-white">Login</Link>}
+          
+          </ul>
       </div>
-    </div>
+      </div>
+   
   )
 }
 
-export default Navabar
+export default Navbar
