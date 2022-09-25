@@ -4,6 +4,9 @@ import { Route, Routes } from "react-router-dom";
 import Login from './components/Auth/Login';
 import Signup from './components/Auth/Signup';
 import Dashboard from './components/Dashboard/Dashboard';
+import Booking from './components/Dashboard/Booking';
+import BookingList from './components/Dashboard/BookingList';
+import Review from './components/Dashboard/Review';
 function App() {
 
 
@@ -15,8 +18,9 @@ function App() {
     <Route path="/signup" element={<Signup />}></Route>
       {/* Nested Route */}
     <Route path="/dashboard" element={<Dashboard/>}>
-    {/* <Route index element={<MyProfile />}></Route> */}
-    {/* <Route path="order" element={}></Route> */}
+    <Route index element={<Booking />}></Route>
+    <Route path="booklist" element={<BookingList/>}></Route>
+    <Route path="review" element={<Review/>}></Route>
     </Route>
     </Routes>
 </div>
