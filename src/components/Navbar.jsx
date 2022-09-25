@@ -2,6 +2,8 @@ import logo from "../assets/Image_Icon/Icon/logo.png"
 import { Link } from 'react-router-dom';
 import auth from "../firebase.init";
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { signOut } from 'firebase/auth';
+
 function Navabar() {
   const [user] = useAuthState(auth);
   const logout = () => {
@@ -9,14 +11,16 @@ function Navabar() {
     if (confirm) {
       signOut(auth);
     };
-
   }
+
   const nav = <>
-    <li><a>Home</a></li>
-    <li><a>About us</a></li>
-    <li><a>Projects</a></li>
-    <li><a>Contact</a></li>
-    <li><a>Admin</a></li>
+    <li><Link to="/">Home</Link></li>
+    <li><Link to="/">About us</Link></li>
+    <li><a href="#service">Services</a></li>
+    <li><a href="#project">Projects</a></li>
+    <li><a href="#contact">Contact us</a></li>
+
+
   </>
 
   return (
@@ -41,7 +45,7 @@ function Navabar() {
         </ul>
       </div>
       <div className="navbar-end">
-        {user ? <button onClick={logout} className="btn btn-ghost">Logout</button> :
+        {user ? <button onClick={logout} className="btn hover:bg-red-500 text-green">Logout</button> :
           <Link to="/login" className="btn hover:bg-teal-400 focus:outline-none  text-white">Login</Link>}
       </div>
     </div>

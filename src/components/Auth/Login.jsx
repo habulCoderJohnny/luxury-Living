@@ -5,8 +5,8 @@ function Login() {
 
 
     return (
-      <div className="text-center  my-20">
-        <img className="w-44 mx-auto" src={logo} />
+      <div className="text-center my-20 bg">
+          <Link to="/"> <img className="w-44 mx-auto" src={logo} /></Link>
         <h1 className="text-3xl font-black my-10">Login With</h1>
         <SocialAuth></SocialAuth>
 

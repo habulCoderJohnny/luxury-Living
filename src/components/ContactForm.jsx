@@ -2,7 +2,7 @@ function ContactForm() {
 
 
     return (
-      <div className="text-center my-20">
+      <div id="contact" className="text-center my-20">
         <h1>Contact</h1>
             <p className="text-3xl font-black mb-20">
               Let us handle your 

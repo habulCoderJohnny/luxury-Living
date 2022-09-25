@@ -10,7 +10,7 @@ function Services() {
 
 
     return (
-      <div className=" text-center my-28">
+      <div id="service" className="text-center my-28">
          <h1>Services</h1>
             <p className="text-3xl font-black">We're an agency tailored to all
                 <p>clients' needs that always delivers</p>

@@ -8,7 +8,7 @@ function Projects() {
             .then(data => setProject(data))
     }, []);
     return (
-        <div className="text-center my-20">
+        <div id="project" className="text-center my-20">
             <h1>Projects</h1>
             <p className="text-3xl font-black">Discover the latest Interior Design
                 <p>available today</p>
