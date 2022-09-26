@@ -19,7 +19,7 @@ function App() {
       {/* Nested Route */}
     <Route path="/dashboard" element={<Dashboard/>}>
     <Route index element={<Booking />}></Route>
-    <Route path="booklist" element={<BookingList/>}></Route>
+    <Route path="booking-list" element={<BookingList/>}></Route>
     <Route path="review" element={<Review/>}></Route>
     </Route>
     </Routes>
