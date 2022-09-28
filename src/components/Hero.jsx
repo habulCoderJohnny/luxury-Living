@@ -19,7 +19,7 @@ function Hero() {
                             </p>
                             </p>
                        
-                        <button className="btn btn-primary  hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white">booking</button>
+                        <button className="btn text-white btn-primary hover:bg-white hover:text-black focus:shadow-outline focus:outline-none ">booking</button>
                     </div>
                 </div>
             </div>

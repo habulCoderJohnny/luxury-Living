@@ -1,6 +1,8 @@
 function BookingList() {
     return(
-        <div></div>
+        <div>
+            <h1>BookingList</h1>
+        </div>
 
     )
 }

@@ -61,7 +61,7 @@ function ContactForm() {
 
         <div class="md:flex md:items-center">
           <div class="md:w-1/3">
-            <button class="shadow btn-primary hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+            <button class="shadow btn text-white btn-primary hover:bg-white hover:text-black focus:shadow-outline focus:outline-none font-bold py-2 px-4 rounded" type="button">
             Sent Message
             </button>
           </div>

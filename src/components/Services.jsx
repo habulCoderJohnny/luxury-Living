@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
+import Booking from "./Dashboard/Booking";
 
 function Services() {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('Services.json')
+        fetch('http://localhost:5000/services')
             .then(res => res.json())
             .then(data => setServices(data))
     }, []);
@@ -25,15 +26,15 @@ function Services() {
                         <h2 className="">{service.name}</h2>
                         <p className="">${service.price}
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ex odio sed odit accusantium placeat, at architecto ratione quisquam iusto.</p> 
-                        </p>    
-                       
+                        </p>      
                     </div>
                 </div>
                 )
             }
             </div>
 
-            <button className="btn btn-primary  hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white">Explore more</button>
+            <button className="btn text-white btn-primary hover:bg-white hover:text-black focus:shadow-outline focus:outline-none ">Explore more</button>
+
      
       </div>
     )

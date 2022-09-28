@@ -43,7 +43,7 @@ const handleCreateUser = event => {
        <Link to="/"><img className="w-44 mx-auto mb-6" src={logo} /></Link>
        
      
-    <div className="card w-full max-w-sm shadow-2xl bg-base-100 mx-auto rounded">
+    {/* <div className="card w-full max-w-sm shadow-2xl bg-base-100 mx-auto rounded">
 
       <div className="card-body">
       <h1 className="text-2xl font-semibold text-left">Create an account</h1>
@@ -83,7 +83,7 @@ const handleCreateUser = event => {
         </form>
 
       </div>
-    </div>
+    </div> */}
     <div className="divider max-w-sm mx-auto text-red-500">OR</div>
       <SocialAuth></SocialAuth>
   </div>
