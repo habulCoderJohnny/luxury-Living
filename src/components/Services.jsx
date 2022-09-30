@@ -4,7 +4,7 @@ import Booking from "./Dashboard/Booking";
 function Services() {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://luxury-living-server-qp69.onrender.com/services')
             .then(res => res.json())
             .then(data => setServices(data))
     }, []);
