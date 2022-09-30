@@ -7,6 +7,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 import Booking from './components/Dashboard/Booking';
 import BookingList from './components/Dashboard/BookingList';
 import Review from './components/Dashboard/Review';
+import RequireAuth from './components/Auth/RequireAuth';
 function App() {
 
 
@@ -17,7 +18,7 @@ function App() {
     <Route path="/login" element={<Login />}></Route>
     <Route path="/signup" element={<Signup />}></Route>
       {/* Nested Route */}
-    <Route path="/dashboard" element={<Dashboard/>}>
+    <Route path="/dashboard" element={<RequireAuth><Dashboard/></RequireAuth>}>
     <Route index element={<Booking />}></Route>
     <Route path="booking-list" element={<BookingList/>}></Route>
     <Route path="review" element={<Review/>}></Route>

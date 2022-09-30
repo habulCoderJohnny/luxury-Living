@@ -39,7 +39,7 @@ function Booking() {
          
                         <option selected disabled>Pick your option</option>
                             {
-                                services.map((booking,index)=><option key={index} defaultValue={booking}>{booking?.name} / $ {booking?.price}</option>
+                                services.map((booking)=><option key={booking._id} defaultValue={booking}>{booking?.name} / $ {booking?.price}</option>
                                
                                 )
                             }

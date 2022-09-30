@@ -3,6 +3,7 @@ import fb from "../../assets/Image_Icon/Icon/fb.png";
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
 import auth from "../../firebase.init";
+import Loading from "../Shared/Loading";
 
 function SocialAuth() {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -11,6 +12,9 @@ function SocialAuth() {
     const navigate = useNavigate();
     if (gUser){
       navigate('/')
+    }
+    if (gLoading){
+        return <Loading/> 
     }
 
 
